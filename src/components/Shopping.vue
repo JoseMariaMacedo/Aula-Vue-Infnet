@@ -7,7 +7,7 @@
                 @click="insert = !insert">Inserir</button>
             <div v-show="insert">
                 <input type="text"
-                @keyup.enter = "item.push({...newItem})"
+                @keyup.enter = "item.push ({ ...newItem })"
                 v-model = "newItem.product">
 
                 <strong>Priority:</strong>
