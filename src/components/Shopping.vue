@@ -71,3 +71,56 @@
             </ul>
     </div>
 </template>
+
+<script>
+    export default {
+         name: 'Shopping',
+         props: {
+          name_store: String,
+        },
+        data(){
+            return{
+                subTitle: "<strong>Mult</strong> Shopping",
+                insert: false,
+                newItem:{
+                    product: '',
+                    priority: 'low',
+                    color: 'black',
+                    gift: false,
+                    complements: [],
+                },
+                items: [
+                    {id: 1, price: 60.0, product: 'chapeu'},
+                    {id: 2, price: 55.93, product: 'jogo'},
+                    {id: 3, price: 21.32, product: 'caneca'},
+                ]
+            }
+
+        }
+     
+    
+    }
+</script>
+<style scoped>
+    strong, label{
+        margin: 10px auto;
+        display: block;
+    }
+    h3{
+        margin: 40px 0 0;
+
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+
+    }
+    li{
+        display: block;
+        margin: 10px 10px;
+        font-size: x-large;
+    }
+    a{
+        color: aquamarine;
+    }
+</style>
